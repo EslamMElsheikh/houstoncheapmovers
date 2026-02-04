@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houston Cheap Movers | Premium Moving Services in Houston, TX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF4A1C;
+            --primary-light: #FF6B47;
+            --secondary: #0A1128;
+            --accent: #FFB800;
+            --text-dark: #1A1A1A;
+            --text-light: #6B7280;
+            --bg-light: #FAFAFA;
+            --bg-white: #FFFFFF;
+            --gradient-1: linear-gradient(135deg, #FF4A1C 0%, #FF8C42 100%);
+            --gradient-2: linear-gradient(135deg, #0A1128 0%, #1E3A5F 100%);
+            --gradient-3: linear-gradient(135deg, #FFB800 0%, #FFC940 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-white);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Custom Cursor */
+        body {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="8" fill="rgba(255,74,28,0.3)"/></svg>'), auto;
+        }
+
+        a, button {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="12" cy="12" r="10" fill="rgba(255,184,0,0.5)"/></svg>'), pointer;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 74, 28, 0.3);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 74, 28, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0A1128 0%, #1E3A5F 50%, #0A1128 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 74, 28, 0.15) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 184, 0, 0.1) 0%, transparent 70%);
+            bottom: -150px;
+            left: -150px;
+            border-radius: 50%;
+            animation: float 15s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(30px, -30px) rotate(5deg); }
+            50% { transform: translate(-20px, 20px) rotate(-5deg); }
+            75% { transform: translate(20px, 10px) rotate(3deg); }
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+        }
+
+        .hero-text h1 .highlight {
+            background: var(--gradient-3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            max-width: 550px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 74, 28, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 74, 28, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+            height: 600px;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: floatCard 6s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+
+        .card-1 {
+            top: 50px;
+            left: 50px;
+            width: 280px;
+            animation-delay: 0s;
+        }
+
+        .card-2 {
+            top: 200px;
+            right: 100px;
+            width: 260px;
+            animation-delay: 1s;
+        }
+
+        .card-3 {
+            bottom: 100px;
+            left: 100px;
+            width: 300px;
+            animation-delay: 2s;
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .card-text {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 8rem 2rem;
+            background: var(--bg-light);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 32px;
+            padding: 3rem;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.5s;
+            border-radius: 32px;
+        }
+
+        .service-card:hover::before {
+            opacity: 0.03;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+            border-color: rgba(255, 74, 28, 0.2);
+        }
+
+        .service-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 10px 30px rgba(255, 74, 28, 0.3);
+        }
+
+        .service-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 1.05rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 2rem;
+            background: var(--gradient-2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(255, 184, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 74, 28, 0.1) 0%, transparent 50%);
+        }
+
+        .features-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s;
+        }
+
+        .feature-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-8px);
+            border-color: rgba(255, 184, 0, 0.3);
+        }
+
+        .feature-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            background: var(--gradient-3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h4 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .feature-item p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 8rem 2rem;
+            background: white;
+        }
+
+        .pricing-container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .price-card {
+            background: white;
+            border-radius: 32px;
+            padding: 3rem;
+            border: 2px solid #E5E7EB;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .price-card.featured {
+            background: var(--gradient-2);
+            border: none;
+            transform: scale(1.05);
+            box-shadow: 0 30px 80px rgba(10, 17, 40, 0.2);
+        }
+
+        .price-card.featured * {
+            color: white !important;
+        }
+
+        .price-card.featured .price-badge {
+            background: var(--gradient-3);
+            color: var(--text-dark);
+        }
+
+        .price-card.featured .feature-check {
+            color: var(--accent) !important;
+        }
+
+        .price-card:not(.featured):hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-light);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background: var(--gradient-3);
+            color: var(--text-dark);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 184, 0, 0.4);
+        }
+
+        .price-badge {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            margin: 2rem 0;
+        }
+
+        .price-card.featured .price {
+            color: var(--accent);
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 2.5rem 0;
+        }
+
+        .price-features li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-light);
+        }
+
+        .price-card.featured .price-features li {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-check {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .price-card .btn-primary {
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 2rem;
+            background: var(--bg-light);
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .contact-info {
+            background: var(--gradient-2);
+            padding: 4rem;
+            color: white;
+        }
+
+        .contact-info h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-details p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-form {
+            padding: 4rem;
+        }
+
+        .contact-form h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(255, 74, 28, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+        }
+
+        .floating-btn {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 10px 40px rgba(255, 74, 28, 0.5);
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-visual {
+                display: none;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .price-card.featured {
+                transform: scale(1);
+            }
+        }
+
+        /* Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">HOUSTON MOVERS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Houston's Most <span class="highlight">Trusted</span> Moving Company</h1>
+                <p>Experience premium moving services at affordable prices. We handle your belongings with care and precision, making your move stress-free and seamless.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Get Free Quote</a>
+                    <a href="tel:+17135555678" class="btn-secondary">Call Now</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🚚</div>
+                    <div class="card-title">Fast & Reliable</div>
+                    <div class="card-text">On-time delivery guaranteed</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🛡️</div>
+                    <div class="card-title">Fully Insured</div>
+                    <div class="card-text">Complete protection for your items</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">💰</div>
+                    <div class="card-title">Best Prices</div>
+                    <div class="card-text">No hidden fees, transparent pricing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header reveal">
+            <span class="section-tag">Our Services</span>
+            <h2 class="section-title">Complete Moving Solutions</h2>
+            <p class="section-subtitle">From residential moves to commercial relocations, we offer comprehensive services tailored to your needs</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon-wrapper">🏡</div>
+                <h3>Residential Moving</h3>
+                <p>Professional home moving services with experienced staff. We handle everything from packing to unpacking, ensuring a smooth transition to your new home.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon-wrapper">🏢</div>
+                <h3>Commercial Moving</h3>
+                <p>Minimize downtime with our efficient office relocation services. We work around your schedule to ensure business continuity.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon-wrapper">📦</div>
+                <h3>Packing Services</h3>
+                <p>Expert packing with premium materials. We protect your valuables with industry-leading techniques and supplies.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon-wrapper">🚛</div>
+                <h3>Long Distance</h3>
+                <p>Interstate moves made easy with GPS tracking and full insurance. Reliable service across the United States.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon-wrapper">🔧</div>
+                <h3>Assembly Services</h3>
+                <p>Professional furniture disassembly and reassembly. We handle complex items with precision and care.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon-wrapper">🏪</div>
+                <h3>Storage Solutions</h3>
+                <p>Secure, climate-controlled storage facilities available. Short-term and long-term options to fit your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-container">
+            <div class="section-header reveal">
+                <span class="section-tag" style="background: var(--gradient-3);">Why Choose Us</span>
+                <h2 class="section-title" style="color: white;">Experience The Difference</h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Discover why thousands of Houston residents trust us with their most valuable possessions</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="feature-number">100%</div>
+                    <h4>Satisfaction Guaranteed</h4>
+                    <p>We don't rest until you're completely satisfied with our service</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-number">24/7</div>
+                    <h4>Always Available</h4>
+                    <p>Round-the-clock customer support for your peace of mind</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-number">$1M+</div>
+                    <h4>Insurance Coverage</h4>
+                    <p>Comprehensive protection for all your belongings</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <div class="feature-number">50+</div>
+                    <h4>Expert Team</h4>
+                    <p>Trained professionals dedicated to excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="pricing-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Transparent Pricing Plans</h2>
+                <p class="section-subtitle">Choose the perfect package for your moving needs. No hidden fees, no surprises.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card reveal">
+                    <div class="price-badge">Basic</div>
+                    <h3>Studio/1BR</h3>
+                    <div class="price">$199</div>
+                    <ul class="price-features">
+                        <li><span class="feature-check">✓</span> Up to 2 bedrooms</li>
+                        <li><span class="feature-check">✓</span> 2 professional movers</li>
+                        <li><span class="feature-check">✓</span> Standard truck</li>
+                        <li><span class="feature-check">✓</span> Basic insurance</li>
+                        <li><span class="feature-check">✓</span> Up to 20 miles</li>
+                        <li><span class="feature-check">✓</span> 4 hours service</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Choose Plan</a>
+                </div>
+
+                <div class="price-card featured reveal">
+                    <div class="popular-badge">⭐ MOST POPULAR</div>
+                    <div class="price-badge">Professional</div>
+                    <h3>2-4BR Home</h3>
+                    <div class="price">$399</div>
+                    <ul class="price-features">
+                        <li><span class="feature-check">✓</span> Up to 4 bedrooms</li>
+                        <li><span class="feature-check">✓</span> 4 professional movers</li>
+                        <li><span class="feature-check">✓</span> Large truck</li>
+                        <li><span class="feature-check">✓</span> Premium insurance</li>
+                        <li><span class="feature-check">✓</span> Up to 50 miles</li>
+                        <li><span class="feature-check">✓</span> Free packing materials</li>
+                        <li><span class="feature-check">✓</span> Disassembly/assembly</li>
+                        <li><span class="feature-check">✓</span> 8 hours service</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Choose Plan</a>
+                </div>
+
+                <div class="price-card reveal">
+                    <div class="price-badge">Premium</div>
+                    <h3>Large Home/Office</h3>
+                    <div class="price">$699</div>
+                    <ul class="price-features">
+                        <li><span class="feature-check">✓</span> 5+ bedrooms</li>
+                        <li><span class="feature-check">✓</span> 6+ professional movers</li>
+                        <li><span class="feature-check">✓</span> Multiple trucks</li>
+                        <li><span class="feature-check">✓</span> Full coverage insurance</li>
+                        <li><span class="feature-check">✓</span> Unlimited distance</li>
+                        <li><span class="feature-check">✓</span> Complete packing service</li>
+                        <li><span class="feature-check">✓</span> Storage included (30 days)</li>
+                        <li><span class="feature-check">✓</span> White glove service</li>
+                        <li><span class="feature-check">✓</span> Cleaning service</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container reveal">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.8);">Ready to make your move? Contact us today for a free quote and consultation.</p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>(713) 555-MOVE</p>
+                        <p>Available 24/7</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>info@houstoncheapmovers.com</p>
+                        <p>Response within 1 hour</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>123 Main Street</p>
+                        <p>Houston, TX 77001</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <div class="contact-details">
+                        <h4>Hours</h4>
+                        <p>Monday - Sunday</p>
+                        <p>6:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Request A Quote</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="(713) 555-1234" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Moving Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Details</label>
+                        <textarea placeholder="Tell us about your moving needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Get Free Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Houston Cheap Movers</h4>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">Houston's premier moving company, providing exceptional service since 2009. Your trusted partner for all moving needs.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Residential Moving</a></li>
+                    <li><a href="#">Commercial Moving</a></li>
+                    <li><a href="#">Packing Services</a></li>
+                    <li><a href="#">Storage Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+17135555678">(713) 555-MOVE</a></li>
+                    <li><a href="mailto:info@houstoncheapmovers.com">Email Us</a></li>
+                    <li><a href="#">Leave a Review</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Houston Cheap Movers. All rights reserved. | Your Move, Our Priority 🚚</p>
+        </div>
+    </footer>
+
+    <div class="floating-cta">
+        <a href="tel:+17135555678" class="floating-btn">📞</a>
+    </div>
+
+    <script>
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We will contact you shortly with your free quote.');
+        });
+    </script>
+</body>
+</html>
